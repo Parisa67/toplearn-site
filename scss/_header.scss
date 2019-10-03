@@ -1,0 +1,247 @@
+            #header-top {
+                margin-top: 10px;
+                nav {
+                    ul {
+                        li {
+                            float: right;
+                            list-style: none;
+                            font-size: 12px;
+                            border-left: 1px solid $color-gray-low;
+                            &:first-child {
+                                a {
+                                    padding-right: 0;
+                                }
+                            }
+                            &:last-child {
+                                border-left: none;
+                            }
+                            a {
+                                padding: 8px 10px;
+                                i {
+                                    font-size: 2rem;
+                                    color: $color-gray-low;
+                                }
+                            }
+                            a.a-btn {
+                                border: 1px solid $color-black;
+                                border-radius: 4px;
+                                padding: 3px 10px;
+                                &:hover {
+                                    border: 1px solid $color-primary;
+                                }
+                            }
+                        }
+                    }
+                }
+                nav:nth-child(2) {
+                    ul {
+                        padding-left: 0;
+                        li:last-child {
+                            a {
+                                padding-left: 0;
+                            }
+                        }
+                    }
+                }
+            }
+            
+            #header-midle {
+                .site-logo {
+                    img {
+                        width: 100px;
+                    }
+                }
+                .site-header-icon {
+                    margin-top: 15px;
+                    .icon {
+                        padding: 0 20px;
+                        @include DisplyFlex(row);
+                        &:hover {
+                            a {
+                                color: $color-primary;
+                            }
+                            i {
+                                color: $color-primary;
+                            }
+                        }
+                        span {
+                            font-size: 14px
+                        }
+                        &:last-child {
+                            padding-left: 0;
+                        }
+                        i {
+                            font-size: 28px;
+                            padding-left: 10px;
+                            color: $color-black;
+                            transition: all ease 0.3s 0.1s
+                        }
+                    }
+                }
+            }
+            
+            #header-bottom {
+                min-height: 45px;
+                margin-top: 10px;
+                background-color: $color-black;
+                &-nav {
+                    ul {
+                        //direction: rtl;
+                        //padding-right: 0;
+                        li {
+                            float: right;
+                            list-style: none;
+                            border-left: 1px solid $color-gray-darker;
+                            padding-right: 5px;
+                            position: relative;
+                            &:first-child {
+                                a {
+                                    padding-right: -7px;
+                                }
+                            }
+                            ul {
+                                opacity: 0;
+                                transition: all ease 0.3s;
+                                visibility: hidden;
+                                position: absolute;
+                                background-color: $color-black;
+                                border-bottom: 4px solid $color-primary;
+                                float: none;
+                                direction: rtl;
+                                padding: 0 0 10px 0;
+                                width: 250px;
+                                top: 30;
+                                right: -5px;
+                                z-index: 100;
+                                li {
+                                    border: none;
+                                    list-style-type: none;
+                                    padding: 10px 15px;
+                                    width: 100%;
+                                    text-align: right;
+                                    a {
+                                        width: 100%;
+                                        padding-right: 19px !important;
+                                    }
+                                }
+                            }
+                            &:hover {
+                                ul {
+                                    opacity: 1;
+                                    visibility: visible;
+                                }
+                            }
+                            &:last-child {
+                                border: none;
+                            }
+                            &:first-child {
+                                padding-right: 12px;
+                            }
+                            a {
+                                color: white;
+                                padding: 10px 16px;
+                                &:first-child {
+                                    padding-right: 0;
+                                }
+                                &:hover {
+                                    color: $color-primary;
+                                }
+                            }
+                        }
+                    }
+                }
+                .header-bottom-social {
+                    background-color: $color-primary;
+                    padding: 12px 20px;
+                    position: relative;
+                    transition: all ease 0.3s;
+                    a {
+                        color: white;
+                        padding-right: 20px;
+                    }
+                    i {
+                        color: white;
+                        size: 2rem;
+                        position: absolute;
+                        top: 8px;
+                        right: 12px;
+                    }
+                    &:hover {
+                        background-color: darken($color: $color-primary, $amount: 8);
+                    }
+                }
+            }
+            
+            #header-search-bar {
+                height: 80vh;
+                background: url("../img/site/slide.jpg");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                border-bottom: 4px solid $color-primary;
+                .style-headers {
+                    margin-top: 80px;
+                    h1 {
+                        color: white;
+                        font-size: 26px;
+                        font-weight: bold;
+                        text-align: center;
+                    }
+                    h2 {
+                        color: white;
+                        font-size: 23px;
+                        text-align: center;
+                        // line-height: 22px;
+                    }
+                }
+                .slide-search-bar {
+                    width: 550px;
+                    margin: 50px auto;
+                    position: relative;
+                    button {
+                        position: absolute;
+                        left: 12px;
+                        top: 12px;
+                        border: none;
+                        background-color: transparent;
+                        i {
+                            color: $color-primary;
+                            font-size: 24px
+                        }
+                    }
+                    input {
+                        width: 100%;
+                        border: none;
+                        padding: 14px;
+                        border-radius: 30px;
+                        direction: rtl;
+                        box-shadow: 0 2px 10px 0 black;
+                    }
+                }
+                .slide-icon {
+                    @include DisplyFlex(row-reverse);
+                    margin-bottom: 40px;
+                    &-item {
+                        @include DisplyFlex(column);
+                        .icon-item {
+                            padding: 0 70px;
+                            i {
+                                color: white;
+                                font-size: 6rem;
+                            }
+                        }
+                        .icon-description {
+                            font-size: 2rem;
+                            direction: rtl;
+                            color: white;
+                            span {
+                                font-size: 20px;
+                            }
+                            span:first-child {
+                                padding-left: 6px;
+                                font-family: "B Koodak", Tahoma;
+                            }
+                        }
+                    }
+                }
+            }
