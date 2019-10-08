@@ -346,24 +346,180 @@ a:hover {
 }
 
 .articles-box .descriptions {
+  padding-bottom: 5px;
   border-bottom: 1px solid #dfdfdf;
 }
 
 .articles-box .descriptions h4 {
   direction: rtl;
   padding-right: 10px;
-  border-right: 3px solid #05dfa5;
+  padding: 8px 0 0 0;
 }
 
 .articles-box .descriptions h4 a {
-  padding: 15px 0;
+  padding: 8px 10px;
+  border-right: 3px solid #05dfa5;
   display: inline-block;
   font-size: 14px;
 }
 
 .articles-box .descriptions p {
+  max-height: 50px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 25px;
   color: #5e6a6e;
   font-size: 13px;
+  direction: rtl;
+  padding: 0px 14px 5px;
+}
+
+.articles-box .statistics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.articles-box .statistics .subscriber {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  direction: rtl;
+}
+
+.articles-box .statistics .subscriber a {
+  color: #2c373b;
+}
+
+.articles-box .statistics .subscriber i {
+  padding-left: 7px;
+  font-size: 18px;
+  color: #97aab0;
+}
+
+.articles-box .statistics-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.articles-box .statistics-item .item {
+  border-right: 1px solid #97aab0;
+  padding: 0 10px;
+  margin: 5px;
+  color: #97aab0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.articles-box .statistics-item .item i {
+  padding-left: 7px;
+  font-size: 18px;
+}
+
+.news-letter {
+  min-height: 150px;
+}
+
+.news-letter-description {
+  direction: rtl;
+  margin-top: 30px;
+}
+
+.news-letter-description h4 {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+.news-letter-inputs {
+  margin-top: 50px;
+}
+
+.news-letter-inputs .input-box {
+  float: right;
+  position: relative;
+  width: 40%;
+}
+
+.news-letter-inputs .input-box :first-child {
+  border-left: 1px solid #97aab0;
+}
+
+.news-letter-inputs .input-box input {
+  border: none;
+  padding: 13px 35px 13px 0;
+  width: 100%;
+  direction: rtl;
+}
+
+.news-letter-inputs .input-box i {
+  position: absolute;
+  top: 13px;
+  right: 15px;
+  font-size: 18px;
+  color: #97aab0;
+}
+
+.news-letter-inputs .submit-news-letter {
+  width: 20%;
+}
+
+.news-letter-inputs .submit-news-letter button {
+  float: right;
+  padding: 13px;
+  width: 100%;
+  border: none;
+  background-color: #2c373b;
+  color: white;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+
+.news-letter-inputs .submit-news-letter button:hover {
+  background-color: #425053;
 }
 
 #header-top {
@@ -670,5 +826,47 @@ a:hover {
 #header-search-bar .slide-icon-item .icon-description span:first-child {
   padding-left: 6px;
   font-family: "B Koodak", Tahoma;
+}
+
+#Footer {
+  background-color: #2c373b;
+  min-height: 200px;
+  color: white;
+  direction: rtl;
+}
+
+#Footer .links h3 {
+  font-size: 16px;
+}
+
+#Footer .links ul {
+  list-style-type: none;
+  padding-right: 0;
+}
+
+#Footer .links ul li {
+  padding: 4px 0;
+}
+
+#Footer .links ul li a {
+  color: white;
+  position: relative;
+  padding-right: 20px;
+  display: inline-block;
+}
+
+#Footer .links ul li a::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 7px;
+  border: 1px solid #05dfa5;
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+
+#Footer .links ul li a:hover {
+  padding-right: 20px;
 }
 /*# sourceMappingURL=main.css.map */
