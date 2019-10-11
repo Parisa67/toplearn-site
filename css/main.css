@@ -1,3 +1,4 @@
+@charset "UTF-8";
 a,
 a:active,
 a:visited,
@@ -6,9 +7,17 @@ a:hover {
 }
 
 @font-face {
+  font-family: “yekan”;
+  src: url(fonts/Yekan.eot);
+  src: url(fonts/Yekan.eot?#iefix) format(“embedded-opentype”), url(fonts/Yekan.woff) format(“woff”), url(fonts/Yekan.ttf) format(“truetype”), url(fonts/Yekan.svg#BYekan) format(“svg”);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: Samim;
-  src: url("/fonts/Samim.eot");
-  src: url("/fonts/Samim.eot?#iefix") format("embedded-opentype"), url("/fonts/Samim.woff2") format("woff2"), url("/fonts/Samim.woff") format("woff"), url("/fonts/Samim.ttf") format("truetype");
+  src: url("/fonts/Samim-FD.eot");
+  src: url("/fonts/Samim-FD.eot?#iefix") format("embedded-opentype"), url("/fonts/Samim-FD.woff") format("woff"), url("/fonts/Samim-FD.ttf") format("truetype");
   font-weight: normal;
 }
 
@@ -485,6 +494,13 @@ a:hover {
 .articles-box .statistics-item .item i {
   padding-left: 7px;
   font-size: 18px;
+}
+
+@media only screen and (max-width: 990px) {
+  .box-input {
+    margin-bottom: 30px;
+    margin-top: -20px;
+  }
 }
 
 .news-letter {
@@ -989,11 +1005,12 @@ a:hover {
 
 #header-search-bar .slide-icon-item .icon-description span {
   font-size: 20px;
+  font-family: 'yekan', tahoma;
 }
 
 #header-search-bar .slide-icon-item .icon-description span:first-child {
   padding-left: 6px;
-  font-family: "B Koodak", Tahoma;
+  font-family: 'yekan', tahoma;
 }
 
 #Footer {
@@ -1008,6 +1025,12 @@ a:hover {
   background-color: #2c373b;
   position: relative;
   z-index: 999;
+}
+
+@media only screen and (max-width: 990px) {
+  #Footer .links h3::after {
+    width: 120%;
+  }
 }
 
 #Footer .links h3::after {
@@ -1055,7 +1078,19 @@ a:hover {
 
 #Footer .img-footer {
   margin-top: 40px;
-  margin-left: 190px;
+  margin-left: 125px;
+}
+
+@media only screen and (max-width: 990px) {
+  #Footer .img-footer {
+    margin-bottom: 30px;
+  }
+}
+
+#Footer .line-top .line-top2 {
+  height: 1px;
+  background-color: grey;
+  width: 86%;
 }
 
 .under-footer {
