@@ -24,7 +24,10 @@
                 <div class="col-md-12">
                     <div class="flex-row-rev-space-between">
                         <nav>
-                            <ul>
+                            <span class="responsive-menu-bottom res2" id="toggle-header-top">
+                                <i class="zmdi zmdi-view-headline"></i>
+                            </span>
+                            <ul id="header-top-menu">
                                 <li><a href="#">صفحه اصلی</a></li>
                                 <li><a href="#">آخرین دوره ها</a></li>
                                 <li><a href="#">معرفی مدرسین</a></li>
@@ -39,11 +42,13 @@
                         <nav>
                             <ul>
                                 <li><a href="#">ورود
-                                    <i class="zmdi zmdi-account-o"></i>
-                                </a>
-
+                                        <i class="zmdi zmdi-account-o"></i>
+                                    </a>
                                 </li>
-                                <li><a href="#">عضویت</a></li>
+                                <li>
+                                    <a href="#">عضویت
+                                        <i class="zmdi zmdi-account-o"></i>
+                                    </a></li>
 
                             </ul>
                         </nav>
@@ -52,28 +57,38 @@
             </div>
         </div>
     </div>
-    <hr>
+    <hr class="head-hr">
+
+
+
     <div class="container-fluid" id="header-midle">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="flex-row-rev-space-between">
+                    <div class="flex-row-reverse-space-between">
                         <div class="site-logo">
                             <img src="img/site/logo.png" alt="site-logo">
                         </div>
-                        <div class="site-header-icon flex-row-rev-space-between">
-                            <div class="icon">
-                                <a href="#">کسب درآمد از تاپ لرن</a>
-                                <i class="bnicon-money"></i>
+                        <div class="site-header-icons ">
+                            <span class="responsive-menu-bottom res1" id="toggle-header-middle">
+                                <i class="zmdi zmdi-view-headline"></i>
+                            </span>
+                            <div class="icons" id="header-middle-menu">
+                                <div class="icon">
+                                    <a href="#">کسب درآمد از تاپ لرن</a>
+                                    <i class="bnicon-money"></i>
+                                </div>
+                                <div class="icon">
+                                    <a href="#">همکاری با تاپ لرن</a>
+                                    <i class="bnicon-handshake"></i>
+                                </div>
+                                <div class="icon">
+                                    <a href="#">ماهنامه آموزشی</a>
+                                    <i class="bnicon-open-magazine"></i>
+                                </div>
+
                             </div>
-                            <div class="icon">
-                                <a href="#">همکاری با تاپ لرن</a>
-                                <i class="bnicon-handshake"></i>
-                            </div>
-                            <div class="icon">
-                                <a href="#">ماهنامه آموزشی</a>
-                                <i class="bnicon-open-magazine"></i>
-                            </div>
+
                         </div>
 
                     </div>
@@ -88,7 +103,10 @@
                     <div class="col-md-12">
                         <div class="flex-row-rev-space-between">
                             <nav id="header-bottom-nav">
-                                <ul>
+                                <span class="responsive-menu-bottom res2" id="toggle-header-bottom">
+                                    <i class="zmdi zmdi-view-headline"></i>
+                                </span>
+                                <ul id="header-bottom-menu">
                                     <li>
                                         <a href="#">برنامه نویسی موبایل</a>
                                         <ul>
@@ -146,7 +164,7 @@
                                             <li><a href="#">Adobe</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="#">سءو</a>
+                                    <li><a href="#">سئو</a>
 
                                     </li>
                                     <li><a href="#">سیستم عامل</a>
@@ -187,7 +205,7 @@
                             <button type="submit"><i class="zmdi zmdi-search"></i></button>
                         </form>
                     </div>
-                    <div class="slide-icon">
+                    <div class="slide-icon hidden-sm hidden-xs">
                         <div class="slide-icon-item">
                             <div class="icon-item">
                                 <i class="bnicon-social"></i>
@@ -274,16 +292,15 @@
                     <div class="course-title">
                         <h4 title="آموزش رایگان Python آموزش رایگان Python آموزش رایگان Python">
                             <a href="#">آموزش رایگان Python آموزش رایگان Python
-                                آموزش رایگان Python</a
-                            >
+                                آموزش رایگان Python</a>
                         </h4>
                     </div>
                     <div class="course-prise-time">
                         <a href="#">رایگان</a>
-                            <div class="time">
-                                <span>05:14:00</span>
-                                <i class="zmdi zmdi-alarm-check"></i>
-                            </div>
+                        <div class="time">
+                            <span>05:14:00</span>
+                            <i class="zmdi zmdi-alarm-check"></i>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -316,16 +333,15 @@
                     <div class="course-title">
                         <h4 title="آموزش رایگان Python آموزش رایگان Python آموزش رایگان Python">
                             <a href="#">آموزش رایگان Python آموزش رایگان Python
-                                آموزش رایگان Python</a
-                            >
+                                آموزش رایگان Python</a>
                         </h4>
                     </div>
                     <div class="course-prise-time">
                         <a href="#">رایگان</a>
-                            <div class="time">
-                                <span>05:14:00</span>
-                                <i class="zmdi zmdi-alarm-check"></i>
-                            </div>
+                        <div class="time">
+                            <span>05:14:00</span>
+                            <i class="zmdi zmdi-alarm-check"></i>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -358,16 +374,15 @@
                     <div class="course-title">
                         <h4 title="آموزش رایگان Python آموزش رایگان Python آموزش رایگان Python">
                             <a href="#">آموزش رایگان Python آموزش رایگان Python
-                                آموزش رایگان Python</a
-                            >
+                                آموزش رایگان Python</a>
                         </h4>
                     </div>
                     <div class="course-prise-time">
                         <a href="#">رایگان</a>
-                            <div class="time">
-                                <span>05:14:00</span>
-                                <i class="zmdi zmdi-alarm-check"></i>
-                            </div>
+                        <div class="time">
+                            <span>05:14:00</span>
+                            <i class="zmdi zmdi-alarm-check"></i>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -400,16 +415,15 @@
                     <div class="course-title">
                         <h4 title="آموزش رایگان Python آموزش رایگان Python آموزش رایگان Python">
                             <a href="#">آموزش رایگان Python آموزش رایگان Python
-                                آموزش رایگان Python</a
-                            >
+                                آموزش رایگان Python</a>
                         </h4>
                     </div>
                     <div class="course-prise-time">
                         <a href="#">رایگان</a>
-                            <div class="time">
-                                <span>05:14:00</span>
-                                <i class="zmdi zmdi-alarm-check"></i>
-                            </div>
+                        <div class="time">
+                            <span>05:14:00</span>
+                            <i class="zmdi zmdi-alarm-check"></i>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -442,16 +456,15 @@
                     <div class="course-title">
                         <h4 title="آموزش رایگان Python آموزش رایگان Python آموزش رایگان Python">
                             <a href="#">آموزش رایگان Python آموزش رایگان Python
-                                آموزش رایگان Python</a
-                            >
+                                آموزش رایگان Python</a>
                         </h4>
                     </div>
                     <div class="course-prise-time">
                         <a href="#">رایگان</a>
-                            <div class="time">
-                                <span>05:14:00</span>
-                                <i class="zmdi zmdi-alarm-check"></i>
-                            </div>
+                        <div class="time">
+                            <span>05:14:00</span>
+                            <i class="zmdi zmdi-alarm-check"></i>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -484,16 +497,15 @@
                     <div class="course-title">
                         <h4 title="آموزش رایگان Python آموزش رایگان Python آموزش رایگان Python">
                             <a href="#">آموزش رایگان Python آموزش رایگان Python
-                                آموزش رایگان Python</a
-                            >
+                                آموزش رایگان Python</a>
                         </h4>
                     </div>
                     <div class="course-prise-time">
                         <a href="#">رایگان</a>
-                            <div class="time">
-                                <span>05:14:00</span>
-                                <i class="zmdi zmdi-alarm-check"></i>
-                            </div>
+                        <div class="time">
+                            <span>05:14:00</span>
+                            <i class="zmdi zmdi-alarm-check"></i>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -526,16 +538,15 @@
                     <div class="course-title">
                         <h4 title="آموزش رایگان Python آموزش رایگان Python آموزش رایگان Python">
                             <a href="#">آموزش رایگان Python آموزش رایگان Python
-                                آموزش رایگان Python</a
-                            >
+                                آموزش رایگان Python</a>
                         </h4>
                     </div>
                     <div class="course-prise-time">
                         <a href="#">رایگان</a>
-                            <div class="time">
-                                <span>05:14:00</span>
-                                <i class="zmdi zmdi-alarm-check"></i>
-                            </div>
+                        <div class="time">
+                            <span>05:14:00</span>
+                            <i class="zmdi zmdi-alarm-check"></i>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -568,16 +579,15 @@
                     <div class="course-title">
                         <h4 title="آموزش رایگان Python آموزش رایگان Python آموزش رایگان Python">
                             <a href="#">آموزش رایگان Python آموزش رایگان Python
-                                آموزش رایگان Python</a
-                            >
+                                آموزش رایگان Python</a>
                         </h4>
                     </div>
                     <div class="course-prise-time">
                         <a href="#">رایگان</a>
-                            <div class="time">
-                                <span>05:14:00</span>
-                                <i class="zmdi zmdi-alarm-check"></i>
-                            </div>
+                        <div class="time">
+                            <span>05:14:00</span>
+                            <i class="zmdi zmdi-alarm-check"></i>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -619,16 +629,15 @@
                         <div class="course-title">
                             <h4 title="آموزش رایگان Python آموزش رایگان Python آموزش رایگان Python">
                                 <a href="#">آموزش رایگان Python آموزش رایگان Python
-                                    آموزش رایگان Python</a
-                                >
+                                    آموزش رایگان Python</a>
                             </h4>
                         </div>
                         <div class="course-prise-time">
                             <a href="#">رایگان</a>
-                                <div class="time">
-                                    <span>05:14:00</span>
-                                    <i class="zmdi zmdi-alarm-check"></i>
-                                </div>
+                            <div class="time">
+                                <span>05:14:00</span>
+                                <i class="zmdi zmdi-alarm-check"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -661,16 +670,15 @@
                         <div class="course-title">
                             <h4 title="آموزش رایگان Python آموزش رایگان Python آموزش رایگان Python">
                                 <a href="#">آموزش رایگان Python آموزش رایگان Python
-                                    آموزش رایگان Python</a
-                                >
+                                    آموزش رایگان Python</a>
                             </h4>
                         </div>
                         <div class="course-prise-time">
                             <a href="#">رایگان</a>
-                                <div class="time">
-                                    <span>05:14:00</span>
-                                    <i class="zmdi zmdi-alarm-check"></i>
-                                </div>
+                            <div class="time">
+                                <span>05:14:00</span>
+                                <i class="zmdi zmdi-alarm-check"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -703,16 +711,15 @@
                         <div class="course-title">
                             <h4 title="آموزش رایگان Python آموزش رایگان Python آموزش رایگان Python">
                                 <a href="#">آموزش رایگان Python آموزش رایگان Python
-                                    آموزش رایگان Python</a
-                                >
+                                    آموزش رایگان Python</a>
                             </h4>
                         </div>
                         <div class="course-prise-time">
                             <a href="#">رایگان</a>
-                                <div class="time">
-                                    <span>05:14:00</span>
-                                    <i class="zmdi zmdi-alarm-check"></i>
-                                </div>
+                            <div class="time">
+                                <span>05:14:00</span>
+                                <i class="zmdi zmdi-alarm-check"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -745,16 +752,15 @@
                         <div class="course-title">
                             <h4 title="آموزش رایگان Python آموزش رایگان Python آموزش رایگان Python">
                                 <a href="#">آموزش رایگان Python آموزش رایگان Python
-                                    آموزش رایگان Python</a
-                                >
+                                    آموزش رایگان Python</a>
                             </h4>
                         </div>
                         <div class="course-prise-time">
                             <a href="#">رایگان</a>
-                                <div class="time">
-                                    <span>05:14:00</span>
-                                    <i class="zmdi zmdi-alarm-check"></i>
-                                </div>
+                            <div class="time">
+                                <span>05:14:00</span>
+                                <i class="zmdi zmdi-alarm-check"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1007,16 +1013,15 @@
                     <div class="course-title">
                         <h4 title="آموزش رایگان Python آموزش رایگان Python آموزش رایگان Python">
                             <a href="#">آموزش رایگان Python آموزش رایگان Python
-                                آموزش رایگان Python</a
-                            >
+                                آموزش رایگان Python</a>
                         </h4>
                     </div>
                     <div class="course-prise-time">
                         <a href="#">رایگان</a>
-                            <div class="time">
-                                <span>05:14:00</span>
-                                <i class="zmdi zmdi-alarm-check"></i>
-                            </div>
+                        <div class="time">
+                            <span>05:14:00</span>
+                            <i class="zmdi zmdi-alarm-check"></i>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1049,16 +1054,15 @@
                     <div class="course-title">
                         <h4 title="آموزش رایگان Python آموزش رایگان Python آموزش رایگان Python">
                             <a href="#">آموزش رایگان Python آموزش رایگان Python
-                                آموزش رایگان Python</a
-                            >
+                                آموزش رایگان Python</a>
                         </h4>
                     </div>
                     <div class="course-prise-time">
                         <a href="#">رایگان</a>
-                            <div class="time">
-                                <span>05:14:00</span>
-                                <i class="zmdi zmdi-alarm-check"></i>
-                            </div>
+                        <div class="time">
+                            <span>05:14:00</span>
+                            <i class="zmdi zmdi-alarm-check"></i>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1091,16 +1095,15 @@
                     <div class="course-title">
                         <h4 title="آموزش رایگان Python آموزش رایگان Python آموزش رایگان Python">
                             <a href="#">آموزش رایگان Python آموزش رایگان Python
-                                آموزش رایگان Python</a
-                            >
+                                آموزش رایگان Python</a>
                         </h4>
                     </div>
                     <div class="course-prise-time">
                         <a href="#">رایگان</a>
-                            <div class="time">
-                                <span>05:14:00</span>
-                                <i class="zmdi zmdi-alarm-check"></i>
-                            </div>
+                        <div class="time">
+                            <span>05:14:00</span>
+                            <i class="zmdi zmdi-alarm-check"></i>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1133,16 +1136,15 @@
                     <div class="course-title">
                         <h4 title="آموزش رایگان Python آموزش رایگان Python آموزش رایگان Python">
                             <a href="#">آموزش رایگان Python آموزش رایگان Python
-                                آموزش رایگان Python</a
-                            >
+                                آموزش رایگان Python</a>
                         </h4>
                     </div>
                     <div class="course-prise-time">
                         <a href="#">رایگان</a>
-                            <div class="time">
-                                <span>05:14:00</span>
-                                <i class="zmdi zmdi-alarm-check"></i>
-                            </div>
+                        <div class="time">
+                            <span>05:14:00</span>
+                            <i class="zmdi zmdi-alarm-check"></i>
+                        </div>
                     </div>
                 </div>
             </div>

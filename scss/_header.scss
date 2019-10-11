@@ -1,5 +1,37 @@
             #header-top {
                 margin-top: 10px;
+                @media only screen and (max-width: 1200px) {
+                    #header-top {
+                        margin-bottom: -10px;
+                    }
+                    nav:first-child ul {
+                        padding-top: 10px;
+                        display: none;
+                        position: absolute;
+                        right: 15px;
+                        z-index: 999;
+                        background-color: $color-tosi;
+                        border-bottom: 3px solid $color-primary;
+                        direction: rtl;
+                        padding-right: 0;
+                        padding-left: 0;
+                        width: 260px;
+                        li {
+                            &:last-child {
+                                margin-bottom: 15px;
+                            }
+                            float: none;
+                            border: none;
+                            padding: 7px 20px;
+                            a {
+                                padding: 0;
+                            }
+                            .a-btn {
+                                padding: 3px 5px 3px 160px;
+                            }
+                        }
+                    }
+                }
                 nav {
                     ul {
                         li {
@@ -36,6 +68,15 @@
                 nav:nth-child(2) {
                     ul {
                         padding-left: 0;
+                        li {
+                            border: none;
+                            &::after {
+                                content: "/";
+                            }
+                            &:first-child::after {
+                                content: none;
+                            }
+                        }
                         li:last-child {
                             a {
                                 padding-left: 0;
@@ -46,16 +87,57 @@
             }
             
             #header-midle {
+                @media only screen and (max-width: 990px) {
+                    & {
+                        margin-bottom: -10px;
+                    }
+                    .site-logo {
+                        top: -21px;
+                        position: relative;
+                        right: -18px;
+                        // display: none;
+                    }
+                    .responsive-menu-bottom {
+                        position: relative;
+                        top: 7px;
+                    }
+                }
                 .site-logo {
                     img {
                         width: 100px;
+                        float: right;
                     }
                 }
-                .site-header-icon {
+                .site-header-icons {
                     margin-top: 15px;
+                    @media only screen and (max-width: 990px) {
+                        .icons {
+                            display: none;
+                            background-color: $color-tosi;
+                            position: absolute;
+                            z-index: 999;
+                            width: 260px;
+                            top: 17px;
+                            left: 37px;
+                            border-bottom: 3px solid $color-primary;
+                            padding: 10px;
+                            .icon {
+                                float: none;
+                                padding: 10px;
+                                text-align: right;
+                                i {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
                     .icon {
                         padding: 0 20px;
-                        @include DisplyFlex(row);
+                        float: left;
+                        &:first-child {
+                            padding-left: 0 !important;
+                        }
+                        // @include DisplyFlex(row);
                         &:hover {
                             a {
                                 color: $color-primary;
@@ -85,6 +167,7 @@
                 margin-top: 10px;
                 background-color: $color-black;
                 &-nav {
+                    margin-right: -21px;
                     ul {
                         //direction: rtl;
                         //padding-right: 0;
@@ -142,9 +225,43 @@
                                 padding: 10px 16px;
                                 &:first-child {
                                     padding-right: 0;
+                                    // margin-right: -52px;
                                 }
                                 &:hover {
                                     color: $color-primary;
+                                }
+                            }
+                        }
+                    }
+                    @media only screen and (max-width: 1200px) {
+                        position: relative;
+                        span {
+                            color: white;
+                        }
+                        ul {
+                            display: none;
+                            position: absolute;
+                            background-color: $color-black;
+                            right: 0;
+                            width: 260px;
+                            z-index: 999;
+                            border-bottom: 3px solid $color-primary;
+                            direction: rtl;
+                            padding: 15px 20px;
+                            li {
+                                border: none;
+                                float: none;
+                                padding-bottom: 12px;
+                                &:hover ul {
+                                    position: static;
+                                    opacity: 1;
+                                    visibility: visible;
+                                    position: relative;
+                                    right: -23px;
+                                }
+                                ul {
+                                    visibility: hidden;
+                                    opacity: 0;
                                 }
                             }
                         }
@@ -154,6 +271,7 @@
                     background-color: $color-primary;
                     padding: 12px 20px;
                     position: relative;
+                    left: -18px;
                     transition: all ease 0.3s;
                     a {
                         color: white;
@@ -216,6 +334,10 @@
                         border-radius: 30px;
                         direction: rtl;
                         box-shadow: 0 2px 10px 0 black;
+                    }
+                    @media only screen and (max-width:700px) {
+                        width: 100%;
+                        // display: none;
                     }
                 }
                 .slide-icon {
